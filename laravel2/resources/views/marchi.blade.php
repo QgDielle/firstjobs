@@ -17,13 +17,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
                         <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="/welcome">Home</a>
+                              <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
                         </li>
                         <li class="nav-item">
-                              <a class="nav-link" href="/marchi">Marchi</a>
+                              <a class="nav-link" href="{{route('marchi')}} ">Marchi</a>
                         </li>
                         <li class="nav-item">
-                              <a class="nav-link" href="#">Stores</a>
+                              <a class="nav-link" href=" ">Dettaglio</a>
                         </li>
                   </ul>
             </div>
@@ -43,14 +43,14 @@
       <div class="container my-5">
             <div class="row justify-content-center">
 
-                  @foreach ($watches as $watches)
+                  @foreach ($watches as $watch)
                   <div class="class col-12 col-md-3">
                         <div class="card">
-                              <img class="card-img-top" src="{{$watches ['img']}}">
+                              <img class="card-img-top" height="350" src="{{$watch['img']}}">
                               <div class="card-body">
-                                    <h5 class="card-title">{{$watches['marca']}} {{$watches['modello']}}</h5>
-                                    <p class="card-text">Prezzo: {{$watches ['price']}} </p>
-                                    <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
+                                    <h5 class="card-title">{{$watch['marca']}} {{$watch['modello']}}</h5>
+                                    <p class="card-text">Prezzo: {{$watch['price']}} </p>
+                                    <a href="{{route('dettaglio', ['id' => $watch['id']])}} " class="btn btn-primary mt-3">Vedi dettaglio</a>
                               </div>
                         </div>
                   </div>

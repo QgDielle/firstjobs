@@ -20,7 +20,7 @@
           <a class="nav-link active" aria-current="page" href="{{route('homepage')}} ">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('marchi')}} ">Marchi</a>
+          <a class="nav-link" href="{{route('marchi')}}">Marchi</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="">Stores</a>
@@ -35,9 +35,23 @@
   <div class="container-fluid p-5 bg-warning text-white text-center">
     <div class="row justify-content-center">
       <div class="co1-12">
-        <h1 class="display-1 p-2"> Benvenuti in Clock61</h1> </div>
-        <img src="https://www.immobilisantandrea.it/media2/news/IT/orologi_lusso_piu_costosi_al_mondo.jpg" alt="">
+        <h1 class="display-1 p-2"> Pagina dettaglio</h1> </div>
       </div>
+    </div>
+
+    <div class="container my-5">
+      <row class="justify-content-center">
+        <div class="col-12 col-md-8">
+          <div class="card">
+            <img src="{{$watch['img']}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{$watch['marca']}} {{$watch['modello']}}</h5>
+              <p class="card-text">Prezzo: {{$watch['price']}} </p>
+              <a href="{{route('marchi')}}" class="btn btn-primary">torna indietro</a>
+            </div>
+          </div>
+        </div>
+      </row>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
