@@ -23,7 +23,7 @@
           <a class="nav-link" href="{{route('marchi')}}">Marchi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Stores</a>
+          <a class="nav-link" href="">Dettaglio</a>
         </li>
       </ul>
     </div>
