@@ -9,7 +9,8 @@
                 <h1 class="display-1 p-3">
                     Share your Book
                 </h1>
-                <img src="../../bookwall.jpg" alt="">
+                <h2 class="display-5 p-2">Condividi con noi il tuo libro preferito!</h2>
+                <img src="/booktransparent.jpg" alt="">
         </div>
     </div>
 
