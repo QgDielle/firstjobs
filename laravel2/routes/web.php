@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\BrandController;
+use PhpParser\Node\Expr\FuncCall;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BrandController;
+use App\Http\Controllers\StoreController;
 use App\Http\Controllers\PublicController;
 
 /*
@@ -18,5 +20,7 @@ use App\Http\Controllers\PublicController;
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 
 Route::get('/marchi' , [BrandController::class, 'brand_index'])-> name('marchi');
-
 Route::get('/dettaglio/{id}', [BrandController::class, 'brand_show'])-> name('dettaglio');
+
+Route::get('/stores' , [StoreController::class, 'store_index'])->name('stores');
+Route::get('/store/dettaglio/{id}' , [StoreController::class, 'store_show'])->name('store.dettaglio');

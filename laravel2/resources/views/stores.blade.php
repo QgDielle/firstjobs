@@ -38,7 +38,7 @@
       <div class="container-fluid p-5 bg-warning text-white text-center">
             <div class="row justify-content-center">
                   <div class="co1-12">
-                        <h1 class="display-1"> I nostri marchi</h1>
+                        <h1 class="display-1"> I nostri Store</h1>
                   </div>
             </div>
       </div>
@@ -46,14 +46,14 @@
       <div class="container my-5">
             <div class="row justify-content-center">
 
-                  @foreach ($watches as $watch)
+                  @foreach ($stores as $store)
                   <div class="class col-12 col-md-3">
                         <div class="card">
-                              <img class="card-img-top" height="350" src="{{$watch['img']}}">
+                              <img class="card-img-top" src="https://picsum.photos/350">
                               <div class="card-body">
-                                    <h5 class="card-title">{{$watch['marca']}} {{$watch['modello']}}</h5>
-                                    <p class="card-text">Prezzo: {{$watch['price']}} </p>
-                                    <a href="{{route('dettaglio', ['id' => $watch['id']])}} " class="btn btn-primary mt-3">Vedi dettaglio</a>
+                                    <h5 class="card-title"> {{$store['city']}}</h5>
+                                    <p class="card-text italic">numero negozio: {{$store['id']}}</p>
+                                    <a href="{{route('dettaglio-stores', ['id' => $store['id']])}} " class="btn btn-primary mt-3">Vedi dettaglio</a>
                               </div>
                         </div>
                   </div>

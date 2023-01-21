@@ -38,7 +38,7 @@
   <div class="container-fluid p-5 bg-warning text-white text-center">
     <div class="row justify-content-center">
       <div class="co1-12">
-        <h1 class="display-1 p-2"> Pagina dettaglio</h1> </div>
+        <h1 class="display-1 p-2"> Pagina dettaglio Stores</h1> </div>
       </div>
     </div>
 
@@ -46,11 +46,11 @@
       <row class="justify-content-center">
         <div class="col-12 col-md-8">
           <div class="card">
-            <img src="{{$watch['img']}}" class="card-img-top" alt="...">
+            <img src="https://picsum/photos/400" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">{{$watch['marca']}} {{$watch['modello']}}</h5>
-              <p class="card-text">Prezzo: {{$watch['price']}} </p>
-              <a href="{{route('marchi')}}" class="btn btn-primary">torna indietro</a>
+              <h5 class="card-title">{{$store['street']}} {{$store['number']}}</h5>
+              <p class="card-text">Città: {{$store['city']}} </p>
+              <a href="{{route('stores')}}" class="btn btn-primary">torna indietro</a>
             </div>
           </div>
         </div>
