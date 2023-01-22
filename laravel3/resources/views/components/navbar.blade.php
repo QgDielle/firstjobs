@@ -34,7 +34,7 @@
       </ul>
       <form class="d-flex" role="search">
         {{-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> --}}
-        <button class="btn btn-link btn-cst shadow tx-p" type="button" href="{{route('book.create')}}">Share!</button>
+        <button class="btn btn-cst shadow tx-p" type="button" href="{{route('book.create')}}">Share!</button>
       </form>
     </div>
   </div>
