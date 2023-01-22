@@ -15,7 +15,5 @@ use App\Http\Controllers\PublicController;
 */
 
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
-
-Route::get('/aboutus' , function() {
-    return view('aboutus');
-})->name('aboutus');
+Route::get('/contattaci' , [PublicController::class, 'contact_us'])->name('contattaci');
+Route::post('/contattaci/submit' , [PublicController::class, 'contact_submit'])->name('contattaci.submit');

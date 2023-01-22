@@ -11,7 +11,7 @@
           <a class="nav-link @if(Route::is('homepage')) active text-white @endif" aria-current="page" href="{{route('homepage')}} ">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @if(Route::is('aboutus')) active text-white @endif" href="{{route('aboutus')}}">About Us</a>
+          <a class="nav-link @if(Route::is('contattaci')) active text-white @endif" href="{{route('contattaci')}}">About Us</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -28,7 +28,7 @@
       </ul>
       <form class="d-flex" role="search">
         {{-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> --}}
-        <button class="btn btn-cst tx-p" type="submit">Share!</button>
+        <button class="btn btn-cst shadow tx-p" type="submit">Share!</button>
       </form>
     </div>
   </div>
