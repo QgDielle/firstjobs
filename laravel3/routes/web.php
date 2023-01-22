@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\PublicController;
 
 /*
@@ -17,3 +18,7 @@ use App\Http\Controllers\PublicController;
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 Route::get('/contattaci' , [PublicController::class, 'contact_us'])->name('contattaci');
 Route::post('/contattaci/submit' , [PublicController::class, 'contact_submit'])->name('contattaci.submit');
+
+Route::get('/book/create' , [BookController::class, 'create'])->name('book.create');
+Route::post('/book/store' , [BookController::class, 'store'])->name('book.store');
+Route::get('/book/index' , [BookController::class, 'index'])->name('book.index');

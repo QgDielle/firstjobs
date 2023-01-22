@@ -19,10 +19,10 @@
         </div>
     </div>
     <div class="container-fluid p-2">
-        <div class="row justify-coontent-center mb-5">
+        <div class="row justify-coontent-center mb-3">
             <div class="col-12 text-center">
                 <h1 class="display-3 tx-p">
-                    Contattaci
+                    Lavora con noi!
                 </h1>
                 {{-- <h2 class="tx-p display-5">Cosa stai aspettando...</h2>
                 <button class="btn btn-cst shadow tx-p" href="/">Share!</button> --}}

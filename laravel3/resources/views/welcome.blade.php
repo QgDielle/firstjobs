@@ -25,6 +25,18 @@
                 </div>
             @endif
 
+            @if (session('bookCreated'))
+                <div class="alert alert-success">
+                    {{ session('bookCreated') }}
+                </div>
+            @endif
+             {{-- @if (session('emailError'))
+                <div class="alert alert-danger">
+                    {{ session('emailError') }}
+                </div>
+            @endif --}}
+
+
             <h2 class="display-5 p-2">Condividi con noi il tuo libro preferito!</h2>
             <img src="/media/booktransparent.jpg" alt="">
         </div>
