@@ -23,11 +23,9 @@ class PublicController extends Controller
         $user_data =compact('name', 'message');
         try{
             Mail::to($email)->send(new ContactMail($user_data));
-
         } catch(Exception $error){
             return redirect(route('homepage'))->with('emailError', 'non è stato possibile accogliere la tua richiesta, riprova più tardi');
         }
-
         return redirect(route('homepage'))->with('emailSent', "Grazie per averci contattato, riceverai una mail di conferma");
     }
 }
