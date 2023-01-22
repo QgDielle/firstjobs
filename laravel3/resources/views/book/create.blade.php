@@ -15,7 +15,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
 
-                <form class="p-5 border tx-p bg-light" method="POST" action="{{route('book.store')}}">
+                <form class="p-5 border tx-p bg-light" method="POST" action="{{route('book.store')}}" enctype="multipart/form-data">
                     @csrf
 
                     <div class="mb-3 tx-p">
@@ -26,6 +26,11 @@
                     <div class="mb-3 tx-p">
                         <label for="autore" class="form-label">Autore</label>
                         <input type="text" name="autore" class="form-control" id="autore" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3 tx-p">
+                        <label for="cover" class="form-label">Copertina</label>
+                        <input type="file" name="cover" class="form-control" id="cover" aria-describedby="emailHelp">
                     </div>
 
                     <div class="mb-3 tx-p">

@@ -8,16 +8,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link @if(Route::is('homepage')) active text-white @endif" aria-current="page" href="{{route('homepage')}} ">Home</a>
+          <a class="nav-link @if(Route::is('homepage')) active text-white rounded @endif" aria-current="page" href="{{route('homepage')}} ">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @if(Route::is('contattaci')) active text-white @endif" href="{{route('contattaci')}}">About Us</a>
+          <a class="nav-link @if(Route::is('contattaci')) active text-white rounded @endif" href="{{route('contattaci')}}">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @if(Route::is('book.index')) active text-white @endif" href="{{route('book.index')}}">Tutti i libri</a>
+          <a class="nav-link @if(Route::is('book.index')) active text-white rounded @endif" href="{{route('book.index')}}">shared book</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @if(Route::is('book.create')) active text-white @endif" href="{{route('book.create')}}">Share you book!</a>
+          <a class="nav-link @if(Route::is('book.create')) active text-white rounded @endif" href="{{route('book.create')}}">Share you book!</a>
         </li>
 
         <li class="nav-item dropdown">

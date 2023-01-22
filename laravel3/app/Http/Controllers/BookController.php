@@ -12,11 +12,17 @@ class BookController extends Controller
     }
 
     public function store(Request $request){
-        $book = new Book();
-        $book->title = $request->title;
-        $book->autore = $request->autore;
-        $book->description = $request->description;
-        $book->save();
+        // $book = new Book();
+        // $book->title = $request->title;
+        // $book->autore = $request->autore;
+        // $book->description = $request->description;
+        // $book->save();
+
+        $book = Book::create([
+            'title' => $request->title,
+            'autore' => $request->autore,
+            'description' => $request->description,
+        ]);
 
         return redirect(route('homepage'))->with('bookCreated', 'Hai inserito correttamente il tuo libro preferito!');
     }
