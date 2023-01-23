@@ -7,21 +7,36 @@
     </x-slot>
 
     {{-- header --}}
-    <div class="container-fluid p-5 text-center ">
+    <div class="container-fluid p-5 mt-5 text-center ">
         <div class="row justify-content-center">
-            <col class="col-12">
-            <h1 class="display-3 p-3 tx-p">
-                Chi siamo
-            </h1>
-            <h2 class="p-2">
-                Qui potrai condividere i tuoi libri preferiti, leggerne la recensione e un piccolo riassunto così da poter decidere se comprarlo o meno
-            </h2>
+            <div class="col-12">
+                <h1 class="display-3 tx-p">
+                    Chi siamo
+                </h1>
+            </div>
         </div>
     </div>
-    <div class="container-fluid p-2">
-        <div class="row justify-coontent-center mb-3">
+
+    <div class="container mx-5 px-5 text-center">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-6">
+                <img src="../media/booksmile.jpg" class="img-fluid rounded-circle" alt="Responsive image">
+            </div>
+            <div class="col-12 col-md-6">
+                <h3>
+                    Siamo un piccolo team di lettori che ha come scopo quello di archiviare la maggior parte dei libri più interessanti in un unico sito. Qui potrai condividere i tuoi libri preferiti, leggerne la recensione o un piccolo riassunto così da poter decidere se comprarlo o meno.
+                </h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid p-5 mb-3">
+        <div class="row justify-coontent-center">
             <div class="col-12 text-center">
-                <h1 class="display-3 tx-p">
+                <h2 class="p-3"> E se ti piace la nostra philosophy, puoi anche decidere di diventare parte integrante della nostra community!</h2>
+
+                <h1 class="display-4 p-3 tx-p">
                     Lavora con noi!
                 </h1>
                 {{-- <h2 class="tx-p display-5">Cosa stai aspettando...</h2>
@@ -29,6 +44,7 @@
             </div>
         </div>
     </div>
+
     <div class="container p-5 bg-custom">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
@@ -47,7 +63,7 @@
                     </div>
 
                     <div class="mb-3 tx-p">
-                        <label for="message" class="form-label">Il tuo messaggio</label>
+                        <label for="message" class="form-label">Inserisci una tua breve descrizione</label>
                         <textarea class="form-control" name="message" rows="7" id="message"></textarea>
                     </div>
 
@@ -57,6 +73,9 @@
             </div>
         </div>
     </div>
+
+
+
 
 
 

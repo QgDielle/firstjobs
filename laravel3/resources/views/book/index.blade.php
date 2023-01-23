@@ -6,7 +6,7 @@
   Book shared
  </x-slot>
 
- <div class="container-fluid p-5 text-center bg-custom">
+ <div class="container-fluid p-5 mt-5 text-center bg-custom">
   <div class="row justify-content-center">
    <h1 class="display-3 rounded p-3 tx-p bg-white">
     Book Shared

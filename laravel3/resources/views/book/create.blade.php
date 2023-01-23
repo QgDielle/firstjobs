@@ -2,8 +2,8 @@
 
     <x-navbar />
 
- <div class="container-fluid p-5 bgwarning text-center">
-  <div class="row justify-content-center">
+ <div class="container-fluid p-5 mt-5 bgwarning">
+  <div class="row justify-content-center text-center">
    <div class="col-12">
     <h1 class="display-2 p-3 tx-p">
      Inserisci il tuo libro preferito!

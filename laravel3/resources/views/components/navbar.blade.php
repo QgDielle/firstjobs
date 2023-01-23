@@ -1,5 +1,5 @@
 {{-- Navbar --}}
-  <nav class="navbar navbar-expand-lg bg-light p-3 shadow">
+  <nav class="navbar navbar-expand-lg bg-light fixed-top p-3 shadow">
   <div class="container-fluid">
     <a class="navbar-brand tx-p" href="/"><img src="/media/writing.png" alt="..." height="42"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
