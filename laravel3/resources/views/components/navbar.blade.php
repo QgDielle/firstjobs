@@ -14,7 +14,7 @@
           <a class="nav-link @if(Route::is('contattaci')) active text-white rounded @endif" href="{{route('contattaci')}}">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @if(Route::is('book.index')) active text-white rounded @endif" href="{{route('book.index')}}">shared book</a>
+          <a class="nav-link @if(Route::is('book.index')) active text-white rounded @endif" href="{{route('book.index')}}">Libraries</a>
         </li>
         <li class="nav-item">
           <a class="nav-link @if(Route::is('book.create')) active text-white rounded @endif" href="{{route('book.create')}}">Share you book!</a>
@@ -33,8 +33,8 @@
         </li>
       </ul>
       <form class="d-flex" role="search">
-        {{-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> --}}
-        <button class="btn btn-cst shadow tx-p" type="button" href="{{route('book.create')}}">Share!</button>
+         {{-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> --}}
+        <a href="{{route('book.create')}}" class="btn btn-cst shadow tx-p" type="button" >Share your book!</a>
       </form>
     </div>
   </div>

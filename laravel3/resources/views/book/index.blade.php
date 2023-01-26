@@ -16,7 +16,11 @@
     <div class="col-12 col-md-3">
 
      <div class="card">
-      <img src="https://picsum.photos/300" class="card-img-top" alt="...">
+      @if ($book->cover)
+      <img src="{{Storage::url($book->cover)}}" class="card-img-top" alt="...">
+      @else
+      <img src="https://picsum.photos/400" class="card-img-top" alt="...">
+      @endif
      <div class="card-body">
       <h5 class="card-title tx-p">{{$book->title}}</h5>
       <p class="text-muted fst-italic">{{$book->autore}}</p>
