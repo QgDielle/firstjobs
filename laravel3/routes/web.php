@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\ReaderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,5 @@ Route::post('/contattaci/submit' , [PublicController::class, 'contact_submit'])-
 Route::get('/book/create' , [BookController::class, 'create'])->name('book.create');
 Route::post('/book/store' , [BookController::class, 'store'])->name('book.store');
 Route::get('/book/index' , [BookController::class, 'index'])->name('book.index');
+
+Route::get('/reader/index', [ReaderController::class, 'index'])->name('reader.index');

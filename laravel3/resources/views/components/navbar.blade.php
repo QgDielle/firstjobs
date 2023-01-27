@@ -16,6 +16,9 @@
         <li class="nav-item">
           <a class="nav-link @if(Route::is('book.index')) active text-white rounded @endif" href="{{route('book.index')}}">Libraries</a>
         </li>
+         <li class="nav-item">
+          <a class="nav-link @if(Route::is('reader.index')) active text-white rounded @endif" href="{{route('reader.index')}}">E-book</a>
+        </li>
         {{-- <li class="nav-item">
           <a class="nav-link @if(Route::is('book.create')) active text-white rounded @endif" href="{{route('book.create')}}">Share you book!</a>
         </li> --}}
