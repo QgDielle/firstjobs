@@ -17,7 +17,7 @@
           <a class="nav-link @if(Route::is('book.index')) active text-white rounded @endif" href="{{route('book.index')}}">Libraries</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link @if(Route::is('reader.index')) active text-white rounded @endif" href="{{route('reader.index')}}">E-book</a>
+          <a class="nav-link @if(Route::is('reader.index')) active text-white rounded @endif" href="{{route('reader.index')}}">eBooks</a>
         </li>
         {{-- <li class="nav-item">
           <a class="nav-link @if(Route::is('book.create')) active text-white rounded @endif" href="{{route('book.create')}}">Share you book!</a>
@@ -29,6 +29,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Profilo</a></li>
+            <li><a class="dropdown-item" href="{{route('reader.create')}}">Inserisci il tuo eBook</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();" >Logout</a></li>
             <form id="form-logout" method="POST" action="{{route('logout')}}" class="d-none">@csrf</form>

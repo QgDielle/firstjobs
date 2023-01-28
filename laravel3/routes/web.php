@@ -25,3 +25,5 @@ Route::post('/book/store' , [BookController::class, 'store'])->name('book.store'
 Route::get('/book/index' , [BookController::class, 'index'])->name('book.index');
 
 Route::get('/reader/index', [ReaderController::class, 'index'])->name('reader.index');
+Route::get('/reader/create', [ReaderController::class, 'create'])->name('reader.create');
+Route::post('/reader.store', [ReaderController::class, 'store'])->name('reader.store');

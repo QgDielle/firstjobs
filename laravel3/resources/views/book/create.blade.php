@@ -12,6 +12,16 @@
         </div>
     </div>
 
+    @if(session('readerCreated'))
+    <div class="row justify-content-center text-center">
+        <div class="col-6">
+            <div class="alert alert-success">
+                {{session('readerCreated')}}
+            </div>
+        </div>
+    </div>
+    @endif
+
     <div class="container-fluid p-5 bg-custom">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
@@ -22,7 +32,7 @@
                     <div class="alert alert-danger">
                         <ul>
                             @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
+                            <li>{{ $error }}</li>
                             @endforeach
                         </ul>
                     </div>

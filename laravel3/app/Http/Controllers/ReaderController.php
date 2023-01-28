@@ -26,7 +26,7 @@ class ReaderController extends Controller
      */
     public function create()
     {
-        //
+        return view('reader.create');
     }
 
     /**
@@ -37,7 +37,14 @@ class ReaderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $reader = Reader::create([
+            'name' => $request->name,
+            'brand' => $request->brand,
+            'description' => $request->description,
+            'logo' => $request->file('logo')->store('public(logos')
+        ]);
+
+        return redirect(route('reader.index'))->with('readerCreated', 'Hai correttamente inserito il tuo eBook!');
     }
 
     /**
