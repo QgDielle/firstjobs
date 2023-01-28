@@ -24,7 +24,7 @@
      <div class="card-body">
       <h5 class="card-title tx-p">{{$book->title}}</h5>
       <p class="text-muted fst-italic">{{$book->autore}}</p>
-      <a href="#" class="btn btn-cst tx-p">Scopri di più</a>
+      <a href="{{route('book.show', compact('book'))}}" class="btn btn-cst tx-p">Scopri di più</a>
      </div>
     </div>
    </div>

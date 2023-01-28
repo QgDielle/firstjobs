@@ -23,7 +23,9 @@ Route::post('/contattaci/submit' , [PublicController::class, 'contact_submit'])-
 Route::get('/book/create' , [BookController::class, 'create'])->name('book.create');
 Route::post('/book/store' , [BookController::class, 'store'])->name('book.store');
 Route::get('/book/index' , [BookController::class, 'index'])->name('book.index');
+Route::get('/book/show/{book}', [BookController::class, 'show'])->name('book.show');
 
 Route::get('/reader/index', [ReaderController::class, 'index'])->name('reader.index');
 Route::get('/reader/create', [ReaderController::class, 'create'])->name('reader.create');
 Route::post('/reader.store', [ReaderController::class, 'store'])->name('reader.store');
+Route::get('/reader/show/{reader}', [ReaderController::class, 'show'])->name('reader.show');

@@ -26,7 +26,7 @@
      <div class="card-body">
       <h5 class="card-title">{{$reader->name}}</h5>
       <p class="card-text fst-italic text-muted">{{$reader->brand}}</p>
-      <a href="#" class="btn btn-primary mt-3">Scopri di più</a>
+      <a href="{{route('reader.show', compact('reader'))}}" class="btn btn-cst mt-3">Scopri di più</a>
      </div>
     </div>
    </div>

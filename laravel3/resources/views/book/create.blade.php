@@ -59,7 +59,7 @@
                         <textarea class="form-control" name="description" rows="10" id="description" {{old('description')}}></textarea>
                     </div>
 
-                    <button class="btn btn-cst center shadow tx-p mt-3" type="submit">Share!</button>
+                    <button class="btn btn-cst center tx-p mt-3" type="submit">Share!</button>
                 </form>
 
             </div>

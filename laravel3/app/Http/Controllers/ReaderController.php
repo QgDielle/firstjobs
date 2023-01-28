@@ -41,7 +41,7 @@ class ReaderController extends Controller
             'name' => $request->name,
             'brand' => $request->brand,
             'description' => $request->description,
-            'logo' => $request->file('logo')->store('public(logos')
+            'logo' => $request->file('logo')->store('public/logos')
         ]);
 
         return redirect(route('reader.index'))->with('readerCreated', 'Hai correttamente inserito il tuo eBook!');
@@ -55,7 +55,7 @@ class ReaderController extends Controller
      */
     public function show(reader $reader)
     {
-        //
+        return view('reader.show', compact('reader'));
     }
 
     /**

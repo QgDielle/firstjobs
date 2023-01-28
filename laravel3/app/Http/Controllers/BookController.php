@@ -5,9 +5,16 @@ namespace App\Http\Controllers;
 use App\Models\Book;
 use Illuminate\Http\Request;
 use App\Http\Requests\BookRequest;
+use Illuminate\Support\Facades\Auth;
 
 class BookController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except('index', 'show');
+    }
+
+
     public function create(){
         return view('book.create');
     }
@@ -41,5 +48,10 @@ class BookController extends Controller
 
         return view('book.index', ['books' => $books]);
 
+    }
+
+    public function show(book $book)
+    {
+        return view('book.show', compact('book'));
     }
 }
