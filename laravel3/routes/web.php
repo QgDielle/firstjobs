@@ -29,3 +29,5 @@ Route::get('/reader/index', [ReaderController::class, 'index'])->name('reader.in
 Route::get('/reader/create', [ReaderController::class, 'create'])->name('reader.create');
 Route::post('/reader.store', [ReaderController::class, 'store'])->name('reader.store');
 Route::get('/reader/show/{reader}', [ReaderController::class, 'show'])->name('reader.show');
+Route::get('/reader/edit/{reader}', [ReaderController::class, 'edit'])->name('reader.edit');
+Route::put('/reader/update/{reader}', [ReaderController::class, 'edit'])->name('reader.upadate');

@@ -41,8 +41,13 @@ class ReaderController extends Controller
             'name' => $request->name,
             'brand' => $request->brand,
             'description' => $request->description,
-            'logo' => $request->file('logo')->store('public/logos')
         ]);
+
+        if ($request->logo) {
+            $reader->update([
+                'logo' => $request->file('logo')->store('public/logos'),
+            ]);
+        }
 
         return redirect(route('reader.index'))->with('readerCreated', 'Hai correttamente inserito il tuo eBook!');
     }
@@ -66,7 +71,7 @@ class ReaderController extends Controller
      */
     public function edit(reader $reader)
     {
-        //
+        return view('reader.edit', compact('reader'));
     }
 
     /**
@@ -76,9 +81,21 @@ class ReaderController extends Controller
      * @param  \App\Models\reader  $reader
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, reader $reader)
+    public function update(Request $request, Reader $reader)
     {
-        //
+        $reader->upadate([
+            'name' => $request->name,
+            'brand' => $request->brand,
+            'description' => $request->description,
+        ]);
+
+        if($request->logo){
+            $reader->update([
+                'logo' => $request->file('logo')->store('public/logos'),
+            ]);
+        }
+
+        return redirect(route('reader.index'))->with('readerUpdated', 'Hai modificato il tuo eBook');
     }
 
     /**
